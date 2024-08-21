@@ -116,7 +116,7 @@ class APIPlatform(Base):
         Default API Key Auth Behavior
         '''
         self._session.headers.update({
-            'X-APIKeys': f'accessKey={access_key}; secretKey={secret_key}'
+            'X-APIKeys': f'accessKey={access_key};secretKey={secret_key}'
         })
         self._auth_mech = 'keys'
 
